@@ -1,0 +1,78 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.example:digitalcertificatesystem >----------------
+[INFO] Building digitalcertificatesystem 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ digitalcertificatesystem >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ digitalcertificatesystem ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ digitalcertificatesystem ---
+[INFO] Changes detected - recompiling the module! :input tree
+[INFO] Compiling 3 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ digitalcertificatesystem ---
+[INFO] skip non existing resourceDirectory C:\Users\Gayat\OneDrive\Desktop\TT\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ digitalcertificatesystem ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] 
+[INFO] <<< spring-boot:3.2.0:run (default-cli) < test-compile @ digitalcertificatesystem <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.0:run (default-cli) @ digitalcertificatesystem ---
+[INFO] Attaching agents: []
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-10-13T07:41:17.485+05:30  INFO 24940 --- [           main] D.Backendapplication                     : Starting Backendapplication using Java 26.0.2.1 with PID 24940 (C:\Users\Gayat\OneDrive\Desktop\TT\backend\target\classes started by Gayat in C:\Users\Gayat\OneDrive\Desktop\TT\backend)
+2026-10-13T07:41:17.488+05:30  INFO 24940 --- [           main] D.Backendapplication                     : No active profile set, falling back to 1 default profile: "default"
+2026-10-13T07:41:18.221+05:30  INFO 24940 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-13T07:41:18.244+05:30  INFO 24940 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/Gayat/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-10-13T07:41:19.028+05:30  INFO 24940 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-10-13T07:41:19.043+05:30  INFO 24940 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-13T07:41:19.043+05:30  INFO 24940 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-10-13T07:41:19.108+05:30  INFO 24940 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-13T07:41:19.109+05:30  INFO 24940 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1559 ms
+2026-10-13T07:41:19.299+05:30  INFO 24940 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-13T07:41:19.337+05:30  INFO 24940 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-10-13T07:41:19.365+05:30  INFO 24940 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-13T07:41:19.573+05:30  INFO 24940 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-13T07:41:19.594+05:30  INFO 24940 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-13T07:41:20.096+05:30  INFO 24940 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6eda012b
+2026-10-13T07:41:20.102+05:30  INFO 24940 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-13T07:41:20.964+05:30  INFO 24940 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table certificate (certificate_id varchar(255) not null, course varchar(255), dept varchar(255), issue_date varchar(255), status varchar(255), student_name varchar(255), subject varchar(255), primary key (certificate_id)) engine=InnoDB
+2026-10-13T07:41:21.046+05:30  INFO 24940 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13T07:41:21.142+05:30  WARN 24940 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-13T07:41:21.524+05:30  INFO 24940 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-10-13T07:41:21.534+05:30  INFO 24940 --- [           main] D.Backendapplication                     : Started Backendapplication in 4.488 seconds (process running for 4.882)
+2026-10-13T09:06:42.494+05:30  WARN 24940 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m52s280ms204µs).
+2026-10-13T09:13:25.813+05:30  INFO 24940 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13T09:13:25.822+05:30  INFO 24940 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-13T09:13:25.840+05:30  INFO 24940 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:32 h
+[INFO] Finished at: 2026-10-13T09:13:25+05:30
+[INFO] ------------------------------------------------------------------------
+Terminate batch job (Y/N)? 
+^C
